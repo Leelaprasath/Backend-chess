@@ -6,7 +6,7 @@ require('dotenv').config();
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
-app.use(cors({origin:['https://leelaprasath.github.io/']}));
+app.use(cors({origin:['https://leelaprasath.github.io']}));
 const Adminfunc=require('./routes/admin');
 const Stafffunc=require('./routes/staffroutes');
 const Studentfunc=require('./routes/studentroutes');
